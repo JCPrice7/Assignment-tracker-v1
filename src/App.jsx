@@ -271,14 +271,14 @@ function AddForm({ onAdd, onClose }) {
         <div style={{ display: "grid", gap: 16 }}>
           <div>
             <label style={labelStyle}>Title *</label>
-            <input style={inputStyle} placeholder="e.g. Research Paper on Climate Policy"
+            <input style={inputStyle} placeholder="e.g. Research Paper"
               value={form.title} onChange={e => setField("title", e.target.value)} />
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
             <div>
               <label style={labelStyle}>Course</label>
-              <input style={inputStyle} placeholder="e.g. POLS 301"
+              <input style={inputStyle} placeholder="e.g. ENGR 162"
                 value={form.course} onChange={e => setField("course", e.target.value)} />
             </div>
             <div>
@@ -340,12 +340,12 @@ function AddForm({ onAdd, onClose }) {
           }}>Cancel</button>
           <button onClick={handleSubmit} style={{
             flex: 2, padding: "11px", borderRadius: 8, border: "none",
-            background: "#e8a87c", color: "#111", fontSize: "0.88rem",
+            background: "#9b72cf", color: "#111", fontSize: "0.88rem",
             fontWeight: 700, cursor: "pointer", letterSpacing: "0.02em",
             transition: "background 0.15s",
           }}
-            onMouseOver={e => e.currentTarget.style.background = "#f0b98d"}
-            onMouseOut={e => e.currentTarget.style.background = "#e8a87c"}
+            onMouseOver={e => e.currentTarget.style.background = "#b08de0"}
+            onMouseOut={e => e.currentTarget.style.background = "#9b72cf"}
           >Add Assignment</button>
         </div>
       </div>
@@ -433,7 +433,7 @@ export default function App() {
         ::-webkit-scrollbar-track { background: #111; }
         ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
         input[type=date]::-webkit-calendar-picker-indicator { filter: invert(0.5); cursor: pointer; }
-        input:focus, select:focus, textarea:focus { border-color: #e8a87c !important; }
+        input:focus, select:focus, textarea:focus { border-color: #9b72cf !important; }
       `}</style>
 
       {/* Header */}
@@ -446,19 +446,19 @@ export default function App() {
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
           <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", marginBottom: 20 }}>
             <div>
-              <div style={{ fontSize: "0.65rem", color: "#e8a87c", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 700, marginBottom: 4 }}>Study Tracker</div>
+              <div style={{ fontSize: "0.65rem", color: "#9b72cf", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 700, marginBottom: 4 }}>Assignment Tracker</div>
               <h1 style={{ fontFamily: "'DM Serif Display', Georgia, serif", fontSize: "1.9rem", fontWeight: 400, color: "#f0ede8", lineHeight: 1 }}>
                 My Assignments
               </h1>
             </div>
             <button onClick={() => setShowForm(true)} style={{
-              background: "#e8a87c", color: "#111", border: "none",
+              background: "#9b72cf", color: "#111", border: "none",
               borderRadius: 9, padding: "10px 18px", fontWeight: 700,
               fontSize: "0.85rem", cursor: "pointer", letterSpacing: "0.02em",
               transition: "background 0.15s", fontFamily: "inherit",
             }}
-              onMouseOver={e => e.currentTarget.style.background = "#f0b98d"}
-              onMouseOut={e => e.currentTarget.style.background = "#e8a87c"}
+              onMouseOver={e => e.currentTarget.style.background = "#b08de0"}
+              onMouseOut={e => e.currentTarget.style.background = "#9b72cf"}
             >+ New</button>
           </div>
 
