@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const STORAGE_KEY = "studytracker_assignments";
 
-const CATEGORIES = ["Essay", "Project", "Exam", "Problem Set", "Lab", "Reading", "Other"];
+const CATEGORIES = ["Essay", "Project", "Exam", "Homework", "Lab", "Reading", "Other"];
 
 function getDaysUntil(dateStr) {
   const now = new Date();
